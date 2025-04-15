@@ -27,10 +27,10 @@ jobs:
 
   deploy:
     needs: build
-    runs-on : ubuntu -latest 
+    runs-on: ubuntu-latest 
     steps: 
       - name: SSH to Server 
-      - uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1.0.3
         with: 
           host: 54.147.9.38
           username: ec2-user
